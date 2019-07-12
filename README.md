@@ -1,16 +1,15 @@
 # Intercom Technical Problem
 
-##Introduction
-Intercom Technical Problem project done in **Python 3.7**.
+Intercom Technical Problem project done in **Python 3.7** by Ricardo Serra.
 
-##Instalation
-
-
-##Usage
+## Instalation
 
 
-##Tests
+## Usage
 
 
-##Dependencies
+## Tests
+
+
+## Dependencies
 
