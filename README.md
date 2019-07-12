@@ -1,3 +1,16 @@
 # Intercom Technical Problem
 
-*Python 3.7* is the language used to solve the challenge. 
+##Introduction
+Intercom Technical Problem project done in **Python 3.7**.
+
+##Instalation
+
+
+##Usage
+
+
+##Tests
+
+
+##Dependencies
+
