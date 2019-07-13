@@ -9,7 +9,6 @@ You'll also need **pipenv** before you proceed. **pipenv** is a tool that brings
 ```
 pip3 install pipenv
 ```
-
 ## Instalation
 First, we need to install the dependencies:
 ```
@@ -18,18 +17,18 @@ pipenv install --dev --ignore-pipfile --deploy
 This will create a virtualenv with all dependencies listed on Pipfile.lock using the exact same versions.
 Then, we need to enter our newly created virtualenv with all our dependencies (to run or test the program):
 ```
-    pipenv shell
+pipenv shell
 ```
 ## Usage
 To run the program, type:
 ```
-    python main.py
+python main.py
 ```
 
 ## Tests
 To run all unit tests, make sure you have your virtualenv activated (pipenv shell):
 ```
-    pytest
+pytest
 ```
 All tests should pass.
 
