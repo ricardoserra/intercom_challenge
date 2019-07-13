@@ -15,7 +15,7 @@ First, we need to install the dependencies:
 pipenv install --dev --ignore-pipfile --deploy
 ```
 This will create a virtualenv with all dependencies listed on Pipfile.lock using the exact same versions.
-Then, we need to enter our newly created virtualenv with all our dependencies (to run or test the program):
+Then, *we need to enter our newly created virtualenv with all our dependencies (to run or test the program)*:
 ```
 pipenv shell
 ```
@@ -34,5 +34,6 @@ All tests should pass.
 
 ## Dependencies
 **pytest** - Unit test package that allows clean and simple unit tests
+
 **flake8** - Package that wraps PyFlakes, pycodestyle and McCabe packages to check code against coding style (PEP8), programming errors and to check cyclomatic complexity
 
