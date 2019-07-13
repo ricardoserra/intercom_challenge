@@ -25,6 +25,7 @@ To run the program, type:
 ```
 python main.py
 ```
+On success 'output.txt' file will be created with all customers within 100KM from Intercom's office. You can also check program's result in 'output/output.txt'.
 
 ## Tests
 To run all unit tests, make sure you have your virtualenv activated (pipenv shell):
