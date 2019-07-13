@@ -1,15 +1,39 @@
 # Intercom Technical Problem
 
-Intercom Technical Problem project done in **Python 3.7** by Ricardo Serra.
+Intercom Technical Problem project done in **Python** by **Ricardo Serra**.
+
+## Prerequisites
+**Python 3.7** is required and you can check how to install Python in your favorite OS following this URL:  https://wiki.python.org/moin/BeginnersGuide/Download
+
+You'll also need **pipenv** before you proceed. **pipenv** is a tool that brings together **pip** and **virtualenv** to allow dependency management and virtual environments creation.
+```
+pip3 install pipenv
+```
 
 ## Instalation
-
-
+First, we need to install the dependencies.
+```
+# This will create a virtualenv with all dependencies listed on Pipfile.lock using the exact same versions
+pipenv install --dev --ignore-pipfile --deploy
+```
+Then, we need to enter our newly created virtualenv with all our dependencies (to run or test the program):
+```
+    pipenv shell
+```
 ## Usage
-
+To run the program, type:
+```
+    python main.py
+```
 
 ## Tests
-
+To run all unit tests, make sure you have your virtualenv activated (pipenv shell):
+```
+    pytest
+```
+All tests should pass.
 
 ## Dependencies
+**pytest** - Unit test package that allows clean and simple unit tests
+**flake8** - Package that wraps PyFlakes, pycodestyle and McCabe packages to check code against coding style (PEP8), programming errors and to check cyclomatic complexity
 
