@@ -39,7 +39,7 @@ def read_customers(url):
 
 
 def write_to_file(array, filename):
-    """ Write items from 'array' into a file named 'filename'
+    """ Write tuples from 'array' into a file named 'filename'
     Parameters:
         array (list): list to read from
         filename (string): file to write. Will create a new 'filename' if doesn't
@@ -50,7 +50,7 @@ def write_to_file(array, filename):
         f = open(filename, "w+")
         for item in array:
             # write each item in a single line
-            f.write(f"{json.dumps(item)}\n")
+            f.write(f"{item[0]}, {item[1]}\n")
         # closes the file
     except Exception as e:
         raise e

@@ -17,10 +17,10 @@ if __name__ == "__main__":
 
         # adds customer to 'matching' list if distance is 100KM maximum
         if distance <= 100:
-            matching.append(customer)
+            matching.append((customer["name"], customer["user_id"]))
 
     # sorts 'matching' list in-place, by 'user_id' in ascending order
-    matching.sort(key=lambda k: k["user_id"])
+    matching.sort(key=lambda k: k[1])
 
     # writes 'matching' customers to a file named 'output.txt'
     write_to_file(matching, "output.txt")

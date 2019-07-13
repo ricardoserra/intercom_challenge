@@ -50,7 +50,7 @@ def test_unavailable_customers_url():
 
 def test_valid_write_to_file():
     file_name = 'test.txt'
-    array = [{"index": 1, "name": "foo"}, {"index": 2, "name": "bar"}]
+    array = [("foo", "1"), ("bar", "2")]
     # make sure 'file_name' doesn't exist
     if os.path.exists(file_name):
         os.remove(file_name)
@@ -59,8 +59,8 @@ def test_valid_write_to_file():
     # 'file_name' must exist
     assert os.path.exists(file_name)
     f = open(file_name, 'r')
-    # first line should the array[0] plus \n
-    assert f.readline() == '{\"index\": 1, \"name\": \"foo\"}\n'
+    # first line should be the first time plus \n
+    assert f.readline() == 'foo, 1\n'
     f.close()
 
     os.remove(file_name)
