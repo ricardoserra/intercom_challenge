@@ -38,3 +38,6 @@ All tests should pass.
 
 **flake8** - Package that wraps PyFlakes, pycodestyle and McCabe packages to check code against coding style (PEP8), programming errors and to check cyclomatic complexity
 
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
