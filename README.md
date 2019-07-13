@@ -11,11 +11,11 @@ pip3 install pipenv
 ```
 
 ## Instalation
-First, we need to install the dependencies.
+First, we need to install the dependencies:
 ```
-# This will create a virtualenv with all dependencies listed on Pipfile.lock using the exact same versions
 pipenv install --dev --ignore-pipfile --deploy
 ```
+This will create a virtualenv with all dependencies listed on Pipfile.lock using the exact same versions.
 Then, we need to enter our newly created virtualenv with all our dependencies (to run or test the program):
 ```
     pipenv shell
