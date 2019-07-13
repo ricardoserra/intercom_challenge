@@ -12,6 +12,7 @@ pip3 install pipenv
 ## Instalation
 First, we need to install the dependencies:
 ```
+cd intercom_challenge
 pipenv install --dev --ignore-pipfile --deploy
 ```
 This will create a virtualenv with all dependencies listed on Pipfile.lock using the exact same versions.
