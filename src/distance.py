@@ -17,11 +17,11 @@ def distance_between_points(lat1, long1, lat2, long2):
     Returns:
         distance (float): Distance, between point 1 and point 2 in KMs
     """
+    # Convert all inputs (string or number) to floats
     lat1 = float(lat1)
     lat2 = float(lat2)
     long1 = float(long1)
     long2 = float(long2)
-
 
     # Convert degrees to radians
     long1 = radians(long1)
