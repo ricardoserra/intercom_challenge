@@ -2,7 +2,7 @@ from pytest import approx, raises
 
 from src.distance import distance_between_points
 
-# Floating Point tolerance to be used in unit tests
+# floating Point tolerance to be used in unit tests
 FLOATING_POINT_TOLERANCE = 0.001
 
 

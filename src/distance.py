@@ -17,23 +17,23 @@ def distance_between_points(lat1, long1, lat2, long2):
     Returns:
         distance (float): Distance, between point 1 and point 2 in KMs
     """
-    # Convert all inputs (string or number) to floats
+    # convert all inputs (string or number) to floats
     lat1 = float(lat1)
     lat2 = float(lat2)
     long1 = float(long1)
     long2 = float(long2)
 
-    # Convert degrees to radians
+    # convert degrees to radians
     long1 = radians(long1)
     long2 = radians(long2)
     lat1 = radians(lat1)
     lat2 = radians(lat2)
 
-    # Delta between longitudes
+    # delta between longitudes
     dlong = long2 - long1
 
-    # Central angle between point 1 and point 2
+    # central angle between point 1 and point 2
     c = acos((sin(lat1)*sin(lat2) + cos(lat1) * cos(lat2) * cos(dlong)))
 
-    # Distance, in KMs, is central angle * Earth radius
+    # distance, in KMs, is central angle * Earth radius
     return c * EARTH_RADIUS_KMS
