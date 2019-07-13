@@ -1,5 +1,6 @@
 import json
 import os
+import urllib
 
 from pytest import raises
 
@@ -37,9 +38,14 @@ def test_valid_customers_url():
         assert 'longitude' in customer
 
 
-def test_invalid_customers_url():
+def test_wrong_customers_url():
     with raises(json.JSONDecodeError):
         read_customers("https://www.intercom.com")
+
+
+def test_unavailable_customers_url():
+    with raises(urllib.error.URLError):
+        read_customers("http://unavailabledomainurl.com/")
 
 
 def test_valid_write_to_file():
@@ -56,7 +62,7 @@ def test_valid_write_to_file():
     # first line should the array[0] plus \n
     assert f.readline() == '{\"index\": 1, \"name\": \"foo\"}\n'
     f.close()
-    
+
     os.remove(file_name)
 
 
