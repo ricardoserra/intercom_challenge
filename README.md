@@ -9,31 +9,35 @@ You'll also need **pipenv** before you proceed. **pipenv** is a tool that brings
 ```
 pip3 install pipenv
 ```
-
 ## Instalation
-First, we need to install the dependencies.
+First, we need to install the dependencies:
 ```
-# This will create a virtualenv with all dependencies listed on Pipfile.lock using the exact same versions
+cd intercom_challenge
 pipenv install --dev --ignore-pipfile --deploy
 ```
-Then, we need to enter our newly created virtualenv with all our dependencies (to run or test the program):
+This will create a virtualenv with all dependencies listed on Pipfile.lock using the exact same versions.
+Then, *we need to enter our newly created virtualenv with all our dependencies (to run or test the program)*:
 ```
-    pipenv shell
+pipenv shell
 ```
 ## Usage
 To run the program, type:
 ```
-    python main.py
+python main.py
 ```
 
 ## Tests
 To run all unit tests, make sure you have your virtualenv activated (pipenv shell):
 ```
-    pytest
+pytest
 ```
 All tests should pass.
 
 ## Dependencies
 **pytest** - Unit test package that allows clean and simple unit tests
+
 **flake8** - Package that wraps PyFlakes, pycodestyle and McCabe packages to check code against coding style (PEP8), programming errors and to check cyclomatic complexity
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
